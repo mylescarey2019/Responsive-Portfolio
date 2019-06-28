@@ -37,7 +37,9 @@ header {
 
 /* Container child of #topDiv container in Header */
 #innerTopDiv {
-  width: 960px;
+  /* width: 960px; */
+  width: 100%;
+  max-width: 960px;
   height: 70px;
   margin-left: auto;
   margin-right: auto;
@@ -98,7 +100,7 @@ a {
   clear: both;
   overflow: auto;
   height: 740px;
-  background-image: url(../images/brickwall.png);
+  /* background-image: url(../images/brickwall.png); */
   margin-top: 72px;
  }
 
@@ -119,7 +121,9 @@ a {
 
 /* inner content container */
 .mainDiv {
-  width: 960px;
+  /* width: 960px; */
+  width: 100%;
+  max-width: 960px;
   padding: 30px;
   background-color: #ffffff;
   margin-left: auto;
@@ -148,8 +152,12 @@ p {
 /* about me profile image */
 #profileImg {
   float: left;
-  width: 200px;
-  height: 207px;
+  /* width: 200px; */
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  /* height: 207px; */
+
   padding: 5px 20px 20px 0px;
 }
 
@@ -270,3 +278,42 @@ footer {
   transform: translate(-50%);
   font-size: 8px;
   }
+
+ /* media query section */
+
+/* First breakpoint - these rules take effect at browser's width
+   of 768px or less  */
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: red;
+  }
+
+  #innerTopDiv, .mainDiv {
+    max-width: 90%;
+  }
+  
+}
+
+  /* Second breakpoint - these rules take effect at browser's width
+   of 640x or less  */
+@media screen and (max-width: 640px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: green;
+  }
+
+  #innerTopDiv, .mainDiv {
+    max-width: 90%;
+  }
+
+  #profileImg {
+    padding: 0;
+  }
+
+  header  {
+    position: static;
+  }
+
+
+}
