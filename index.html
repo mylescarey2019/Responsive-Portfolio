@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About Me - Myles Carey</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+ 
+
+  <!-- Code assement:
+       Pleased with the visual appearance and the functional/chrome added to the site.
+
+       Not completly statisified with the html or css.  I think it falls short on semantics,
+       readibility and may suffer from css style bloat.  CSS could probably be shortened
+       by better selector & class groupings and relying more on inheritenance.
+       Html feels brute force in places - undoubtably there are more efficient 
+       cleaner methods for some part of the site.
+       
+       Features:
+         1) fixed Header - body scrolls underneath; fixed footer alway visable if view port is 
+            opened with enough height
+         2) active social media links with icons (email link opens/addresses email)
+         3) first portfolio image link is active and will open pre-work Band Fan Site
+         4) main body will support more content and maintain integrity of layout
+            - i initially struggle with this
+
+        Possible enhancements:
+         1) try Sticky footer
+         2) move social media links to a seperate "Connect with Me" container
+  -->
+  <!-- Page Header -->
+  <header>
+    <!-- Outer & Inner Header Containers -->
+    <div id="topDiv">
+      <div id="innerTopDiv">
+        <!-- Header Name Logo -->
+        <div id="name">
+          Myles Carey
+        </div>
+        <!-- Header Nav Bar -->
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="socialNav">
+              <a href="https://www.linkedin.com/in/mylescarey2019" title="LinkedIn" target="_blank">
+                <img class="socialIcon" src="assets/images/social-linkedin-circular-button.svg" alt="LinkedIn">
+              </a>
+            </li>
+            <li class="socialNav">
+                <a href="https://github.com/mylescarey2019" title="GitHub" target="_blank">
+                  <img class="socialIcon" src="assets/images/w_github.svg" alt="GitHub">
+                </a>
+            </li>
+            <li class="socialNav">
+                <a href="#" title="Coming soon - Twitter" target="_blank">
+                  <img class="socialIcon" src="assets/images/twitter-circular-button.svg" alt="Twitter">
+                </a>
+            </li> 
+            <li class="socialNav">
+                <a href="mailto:mylescarey2019@gmail.com?subject=Regarding%20your%20Portfolio" title="email me">
+                  <img class="socialIcon" src="assets/images/w_gmail.svg" alt="Gmail">
+                </a>
+             </li>             
+          </ul>
+        </nav> 
+      </div>
+    </div>    
+  </header>
+
+  <!-- Main Section outer container -->
+  <section id="mainSection">
+    <!-- Main Section inner container -->
+    <article class="mainDiv">
+      <div id="mainSectionTitle">
+        About Me
+      </div>
+      <!-- rule over bio text-->
+      <div id="contentRule">
+      </div>
+      <!-- Bio article and image -->
+      <div>
+        <p><img id="profileImg" src="assets/images/MylesCarey.jpg" alt="Myles Carey">
+          I am an IT professional who loves solving problems through programming and team collaboration.
+        </p>
+        <p>
+          Programming has been a part of my life since first coding on a Commadore 64 as a teen. &nbsp;I moved on to learn Visual Basic by coding a graphical 
+          Scrabble game to play-by-email with family and friends.</p>
+        <p>
+          I have been working with SQL, relational databases and Unix throughout my career.
+          &nbsp;Now, I am excited about and embracing the challenges of learning web development.
+        </p>
+        <p>
+          In my free time my two teenage daughters, wife and I enjoy camping on the Washington and Oregon coasts. I also enjoy reading world and military history, Astronomy (both night sky and solar observing) and watching the Seahawks.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer with copyright -->
+  <!-- This is a Fixed footer alway appearing in the viewport
+       if it has sufficient height
+       The page content will scroll under the Header.
+       Resize the page to a short height and scroll down to see this.
+       I will revisit to experiment with Sticky footer later-->
+  <footer>
+    <div id="copyRight">
+      Copyright &copy;
+    </div>
+    <div id="iconCredit">Icons made by <a href="https://www.freepik.com/?__hstc=57440181.c82af72166a1350e668996cd7af5e963.1560893080864.1560893080864.1560903302513.2&__hssc=57440181.14.1560903302513&__hsfp=2979606616" 
+        title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		
+        title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+  </footer>
+
+</body>
+</html>

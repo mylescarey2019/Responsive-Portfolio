@@ -1,0 +1,272 @@
+/* About me site style sheet */
+
+/* tag classes  */
+header .imageText {background-color: #ffffff;}
+header, h2 {font-family: Georgia, 'Times New Roman', Times, serif;}
+body, a, p, nav, form, input, textarea {font-family: Arial, Helvetica, sans-serif;}
+header, h2 {color: #4aaaa5;}
+nav, article, form, input {color: #777777;}
+.mainTextColor {color: #777777;}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+  }
+
+/* Header */
+header {
+  border-bottom: 2px solid #777777;
+  /* relative & z-index needed so porfolio image text goes under 
+     banner when scrolling down */
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+ 
+ } 
+
+ /* Container used in Header */
+#topDiv {
+  height: 70px;
+  background-color: #ffffff;
+}
+
+/* Container child of #topDiv container in Header */
+#innerTopDiv {
+  width: 960px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* my name - in Header */
+   #name {
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+    font-size:24px;
+    font-weight: bold;
+    width: 200px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+
+/* nav menu - unordered list*/
+ul {
+  float: right;
+  list-style-type: none;
+  box-sizing: border-box;
+  height: 100%; 
+ }
+
+ /* nav menu - list items */
+li {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-top: 27px; 
+  padding-bottom: 27px;
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+/* nav menu - links */
+a {
+  text-decoration: none;
+}
+
+/* nav menu - social icon container */
+.socialNav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* nav menu - social icon image */
+.socialIcon {
+  width: 30px;
+  height: 30px;
+}
+
+/* main body below header */
+#mainSection {
+  clear: both;
+  overflow: auto;
+  height: 740px;
+  background-image: url(../images/brickwall.png);
+  margin-top: 72px;
+ }
+
+ /* rule line  */
+#contentRule {
+  background-color: #dddddd;
+  height: 2px;
+}
+
+/* title for each page's main section */
+#mainSectionTitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4aaaa5;
+  padding-bottom: 20px;
+}
+
+/* inner content container */
+.mainDiv {
+  width: 960px;
+  padding: 30px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border: 2px solid #dddddd;
+  box-sizing: border-box;
+}
+
+/* used on porfolio page inner content container */
+/* refactored code to use float in portfolio and clearfix */
+   .clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+p {
+  line-height: 1.8;
+  padding-top: 20px;
+  font-size: 14pt;
+}
+
+/* about me profile image */
+#profileImg {
+  float: left;
+  width: 200px;
+  height: 207px;
+  padding: 5px 20px 20px 0px;
+}
+
+/* container for portfolio project */
+.portfolioBox {
+  float: left;
+  height: 230px;
+}
+
+/* portfolio project image */
+.portImg {
+  width: 250px;
+  height: 187px;
+  border: 1px solid #dddddd;
+  margin: 30px 46px 0px 0px;
+}
+
+/* portfolio project image caption */
+.imageText {
+  position: relative;
+  /* z-index needed so image banner slides under header when scroll down */
+  z-index: 0;  
+  bottom: 70px;
+  left: 1px;
+  width: 250px;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-size: 14pt;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+/* used for portfolio projects that are active and have been linked to */
+.portBoxIsActive:hover {
+  opacity: .5;
+}
+
+/* contact me form container */
+form {
+  padding-top: 20px;
+}
+
+/* contact me form text input field */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  font-size: 10pt;
+}
+
+/* contact me form input field highlighting when active */
+ input:focus, textarea:focus {
+   outline: none !important;
+   border-color:1px solid #18847e;
+   box-shadow: 0 0 5px #4aaaa5;
+  }
+
+ /* contact me form message box */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 12px 20px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  font-size: 10pt;
+  color: #777777;
+  resize: none;
+}
+
+/* contact me submit button */
+input[type=submit] {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 12pt;
+}
+
+/* contact me submit button hover */
+input[type=submit]:hover {
+  background-color: #18847e;
+}
+
+/* footer container */
+footer {
+  background-color: #666666;
+  position: relative;
+  height: 52px;
+  border-top: 8px solid #4aaaa5;
+  font-size: 9pt;
+  color: #cccccc;
+}
+
+/* copyright container */
+/* absolute position the Copyright up from bottom 
+   center the Copyright within footer horizontally using the transform.
+   Do same for icon attribution
+*/
+#copyRight {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translate(-50%);
+  }
+
+/* container for the icon usage attribution */
+#iconCredit {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 8px;
+  }
