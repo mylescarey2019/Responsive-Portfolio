@@ -26,11 +26,11 @@ header {
   /* height: 70px; */
   position: fixed;
   top: 0px;
- 
+}
   
-  /* debug */
-  background-color: pink;
- } 
+  /* debug
+    background-color: pink;
+   */
 
  #masthead {
   position: fixed;
@@ -40,7 +40,7 @@ header {
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
-  border-bottom: 2px solid #cccccc;
+  border-bottom: 2px solid #777777;
 }
 
 .container {
@@ -85,9 +85,9 @@ header {
     padding: 20px;
   }
 
-/* debug */
+
 nav {
-  background-color: yellow;
+  /* background-color: yellow; */
   float: right;
 }
 
@@ -317,82 +317,90 @@ footer {
 
  /* media query section */
 
+
 /* First breakpoint - these rules take effect at browser's width
    of 768px or less  */
-@media screen and (max-width: 768px) {
-  /* The body's bg color will be #333 */
-  /* body {
-    background-color: red;
-  } */
-
-  #innerTopDiv, .mainDiv {
-    max-width: 90%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+   @media screen and (max-width: 768px) and (min-width: 641px) {
+    /* The body's bg color will be #333 */
+    /* body {
+      background-color: red;
+    } */
+  
+    #innerTopDiv, .mainDiv {
+      max-width: 90%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .container {
+      max-width: 90%;
+    }
+  
+  
+    li {
+      padding: 27px 5px 27px 5px;
+    }
   }
   
-
-
-  li {
-    padding: 27px 5px 27px 5px;
-  }
-}
+  
 
   /* Second breakpoint - these rules take effect at browser's width
    of 640x or less  */
-@media screen and (max-width: 640px) {
-  /* The body's bg color will be #333 */
-  /* body {
-    background-color: green;
-  } */
-
-  #innerTopDiv, .mainDiv {
-    max-width: 90%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  #mainSection {
-    margin-top: 0px;
-  }
-
-  /* #profileImg {
-    padding: 0;
-  } */
-
-  #masthead  {
-    position: static;
-    margin-bottom: 0px;
-  }
-
-  li {
-    font-size: 14px;
-   }
-
-   .socialIcon {
-     width: 25px;
-     height: 25px;
-   }
-
-  #masthead .container {
-    width: 100%;
-  }
-
-  #name, nav, ul {
-    width: 100%;
-    float: none; 
-    display: inline-block;
-    /* text-align: center; */
-
-  }
-
-  #iconCredit {
-    position: absolute;
-    bottom: 2px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 8px;
-    width: 100%;
+   @media screen and (max-width: 640px) {
+    /* The body's bg color will be #333 */
+    /* body {
+      background-color: green;
+    } */
+  
+    #innerTopDiv, .mainDiv {
+      max-width: 90%;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  
+    #masthead .container {
+      width: 100%;
+    }
+  
+    #mainSection {
+      margin-top: 0px;
+    }
+  
+    /* #profileImg {
+      padding: 0;
+    } */
+  
+    #masthead  {
+      position: static;
+      margin-bottom: 0px;
+    }
+  
+    li {
+      padding: 27px 5px 27px 5px;
+      font-size: 14px;
     }
 
-}
+     .socialIcon {
+       width: 25px;
+       height: 25px;
+     }
+  
+    #name, nav, ul {
+      width: 100%;
+      float: none; 
+      display: inline-block;
+      /* text-align: center; */
+  
+    }
+  
+    #iconCredit {
+      position: absolute;
+      bottom: 2px;
+      left: 50%;
+      transform: translate(-50%);
+      font-size: 8px;
+      width: 100%;
+      }
+  
+  }
+
