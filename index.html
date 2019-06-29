@@ -11,27 +11,44 @@
 <body>
  
 
-  <!-- Code assement:
-       Pleased with the visual appearance and the functional/chrome added to the site.
-
-       Not completly statisified with the html or css.  I think it falls short on semantics,
-       readibility and may suffer from css style bloat.  CSS could probably be shortened
-       by better selector & class groupings and relying more on inheritenance.
-       Html feels brute force in places - undoubtably there are more efficient 
-       cleaner methods for some part of the site.
+  <!-- Code assessment:
+       Refactoring points of my Basic Portfolio solution to add responsiveness had some challenges as the Basic Porfolio code 
+       is first HTML/CSS effort and while produces visual desired results it is full of room for improvement.
+       This responsive version itself could be improved in addition to cleaning up the baggage present from the Basic Portfolio starting point.
        
-       Features:
-         1) fixed Header - body scrolls underneath; fixed footer alway visable if view port is 
-            opened with enough height
-         2) active social media links with icons (email link opens/addresses email)
-         3) first portfolio image link is active and will open pre-work Band Fan Site
-         4) main body will support more content and maintain integrity of layout
-            - i initially struggle with this
+       Features - Responsive:
+       
+        1. Two breakpoints - at 768px and 640px, margins present at all times
+        2. Name/Nav section switches to full container width (stacked on each other) at the 640 breakpoint - above that they have margin
+           and match the width of the body content (max 960px)
+        3. Header is static at small breakpoint but currently a bit buggy (see next section below)
+        4. At 960px the Portfolio page has three columns of projects
+        5. Media query used to help better fit nav bar icons and footer icon attribution text
+        
+        
+      Missing or pooly inplemented:
+      
+        1. Static header buggy at small breakpoint - behavior is that content scrolls under header for certain distance before the
+           header and rest of content scroll up together.  Unsuccessful in debugging this so far.  Desired behavior can be seen in the
+           Bootstrap version - i.e. header is static and whole page scrolls together 
 
-        Possible enhancements:
-         1) try Sticky footer
-         2) move social media links to a seperate "Connect with Me" container
+        2. Portfolio - clumsy placement and ill-responsive behavior on some form factors - projects don't center are take up available space in some cases
+
+        3. Code passed validation, but really need to refactor it for better techniques, better semantics and eliminating/redoing ids and classes
+
+        4. In the footer the text for Icon attribution text got troublesome on smaller form factors so needed media query to rearange 
+
+        5. Better comments needed throughout
+
+        6. A proper README.md file is needed - looking into templates and ideas via google
+        
+      Possible enhancements:
+
+        1. Want to move social media links off the nav bar to their one container on the body as they cause challenges at the smaller form factors
+        
   -->
+
+
   <!-- Page Header -->
   <header id="masthead">
     <!-- Outer & Inner Header Containers -->

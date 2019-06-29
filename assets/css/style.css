@@ -27,11 +27,7 @@ header {
   position: fixed;
   top: 0px;
 }
-  
-  /* debug
-    background-color: pink;
-   */
-
+ 
  #masthead {
   position: fixed;
   z-index: 99;
@@ -49,26 +45,6 @@ header {
   margin: 0 auto;
   clear: both;
 }
-
- /* Container used in Header */
-/* #topDiv {
-  height: 70px;
-  background-color: #ffffff;
-  
-  background-color: violet;
-} */
-
-/* Container child of #topDiv container in Header */
-/* #innerTopDiv { */
-  /* width: 960px; */
-  /* width: 100%;
-  max-width: 960px;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto; */
-    /* debug */
-    /* background-color: darkslateblue */
-/* } */
 
 /* my name - in Header */
    #name {
@@ -319,12 +295,8 @@ footer {
 
 
 /* First breakpoint - these rules take effect at browser's width
-   of 768px or less  */
+   between 641px to 768px inclusive */
    @media screen and (max-width: 768px) and (min-width: 641px) {
-    /* The body's bg color will be #333 */
-    /* body {
-      background-color: red;
-    } */
   
     #innerTopDiv, .mainDiv {
       max-width: 90%;
@@ -332,11 +304,14 @@ footer {
       margin-bottom: 40px;
     }
     
+    /* using this to add responsiveness and margins
+       Should maybe experiment with using pixels to see
+       how behavior may differ */
     .container {
       max-width: 90%;
     }
   
-  
+    /* need to squeeze links & social icon links a bit for better fit */
     li {
       padding: 27px 5px 27px 5px;
     }
@@ -347,17 +322,36 @@ footer {
   /* Second breakpoint - these rules take effect at browser's width
    of 640x or less  */
    @media screen and (max-width: 640px) {
-    /* The body's bg color will be #333 */
-    /* body {
-      background-color: green;
-    } */
   
+    /* mainDiv is the main body container 
+       going to 90% for responsiveness and margins */
     #innerTopDiv, .mainDiv {
       max-width: 90%;
       margin-top: 40px;
       margin-bottom: 40px;
     }
   
+
+  
+    /* make header static */
+    #masthead  {
+      position: static;
+      margin-bottom: 0px;
+    }
+  
+    /* need to squeeze links & social icon links a bit for better fit */
+    li {
+      padding: 27px 5px 27px 5px;
+      font-size: 14px;
+    }
+
+    /* shrinking for better fit */
+     .socialIcon {
+       width: 25px;
+       height: 25px;
+     }
+  
+     /* header, name, nav switching to full width of viewport  */
     #masthead .container {
       width: 100%;
     }
@@ -365,26 +359,8 @@ footer {
     #mainSection {
       margin-top: 0px;
     }
-  
-    /* #profileImg {
-      padding: 0;
-    } */
-  
-    #masthead  {
-      position: static;
-      margin-bottom: 0px;
-    }
-  
-    li {
-      padding: 27px 5px 27px 5px;
-      font-size: 14px;
-    }
 
-     .socialIcon {
-       width: 25px;
-       height: 25px;
-     }
-  
+     /* name and nav switching to full width of viewport  */
     #name, nav, ul {
       width: 100%;
       float: none; 
@@ -393,6 +369,8 @@ footer {
   
     }
   
+    /* icon attribution text is long - need to 
+       rearrange to fit smaller form factors */
     #iconCredit {
       position: absolute;
       bottom: 2px;
