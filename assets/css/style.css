@@ -197,14 +197,20 @@ p {
   width: 250px;
   background-color: #4aaaa5;
   color: hsl(0, 0%, 100%);
-  font-size: 14pt;
+  font-size: 12pt;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 
 /* used for portfolio projects that are active and have been linked to */
 .portBoxIsActive:hover {
+  opacity: .5;
+}
+
+
+/* fade the placeholders a bit */ 
+.place-holder {
   opacity: .5;
 }
 
